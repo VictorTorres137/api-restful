@@ -2,7 +2,7 @@ const express = require('express')
 // const path = require('path')
 
 const routes = require('./routes/routes')
-// const db = require('./database')
+const db = require('./database/db')
 const internal = require('stream')
 
 const app = express()
@@ -10,7 +10,7 @@ const app = express()
 
 
 //conecção com banco de dados
-// db.conect()
+db.connect()
 
 
 //definindo template engine
