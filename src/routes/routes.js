@@ -6,10 +6,11 @@ const ProductController = require('../controllers/products')
 // PUT = Atualizar dados
 // DELETE = Remover dados
 
-router.get('/products', ProductController.get)
-
+router.get('/products/:id?', ProductController.get)
 // router.post('/products', ProductController.post)
 // router.put('/products', ProductController.put)
 // router.delete('/products', ProductController.delete)
+
+
 
 module.exports = router
