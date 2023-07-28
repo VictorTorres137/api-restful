@@ -7,19 +7,11 @@ const internal = require('stream')
 
 const app = express()
 
-
-
 //conecção com banco de dados
 db.connect()
 
 //habilita server para receber dados em Json
 app.use(express.json())
-
-
-//definindo template engine
-
-//habilita server para receber dados via post (Formulário)
-// app.use(express.urlencoded({ extended: true}))
 
 
 //definindo rotas
